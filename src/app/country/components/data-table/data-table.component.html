@@ -15,26 +15,12 @@
 
 
   <tbody>
-<tr>
-  <th scope="row">1</th>
-  <td>USA</td>
-  <td>233,435</td>
-  <td>243,635</td>
-  <td>53,635</td>
-</tr>
-<tr>
-  <th scope="row">2</th>
-  <td>India</td>
-  <td>233,435</td>
-  <td>243,635</td>
-  <td>53,635</td>
-</tr>
-<tr>
-  <th scope="row">3</th>
-  <td>Russia</td>
-  <td>233,435</td>
-  <td>243,635</td>
-  <td>53,635</td>
+<tr *ngFor="let country of countries; let i = index" >
+  <th scope="row">{{i + 1}}</th>
+  <td>{{country?.Country}}</td>
+  <td>{{country?.TotalConfirmed | number}}</td>
+  <td>{{country?.TotalRecovered | number}}</td>
+  <td>{{country?.TotalDeaths | number}}</td>
 </tr>
   </tbody>
 </table>
