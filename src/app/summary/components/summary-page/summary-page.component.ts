@@ -7,13 +7,15 @@ import { DataService } from 'src/app/shared/services/data.service';
   styleUrls: ['./summary-page.component.css']
 })
 export class SummaryPageComponent implements OnInit {
-
+covidData: any = {};
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getSummaryData().subscribe((data: any) => {
-      console.log('summary data', data);
-      
+    this.dataService.getSummaryData()
+    .subscribe(
+      (data: any) => {
+      this.covidData = data;
+      console.log('summary data', this.covidData);
     });
   }
 }
