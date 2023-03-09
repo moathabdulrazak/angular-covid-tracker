@@ -1,18 +1,18 @@
 <nav class="sidebar">
   <div class="logo">
-    <a href="#" title="Logo"><img src="https://www.citypng.com/public/uploads/preview/-11588630676lljfondefs.png" /></a>
+    <a [routerLink]="'summary'" href="#" title="Logo"><img src="https://www.citypng.com/public/uploads/preview/-11588630676lljfondefs.png" /></a>
   </div>
 
   <div class="navigation">
 <ul class="list-unstyled">
-<li>
-  <a href="#">Summary</a>
+<li [routerLink]="'summary'" routerLinkActive="active">
+  <a >Summary</a>
 </li>
-<li>
-  <a href="#">By country</a>
+<li [routerLink]="'country'" routerLinkActive="active" >
+  <a >By country</a>
 </li>
-<li>
-  <a href="#">Live</a>
+<li [routerLink]="'live'" routerLinkActive="active" >
+  <a>Live</a>
 </li>
 </ul>
   </div>

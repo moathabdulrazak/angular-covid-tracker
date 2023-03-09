@@ -41,3 +41,9 @@ transition: all ease 0.4;
 .sidebar .navigation ul li:focus a{
   color: white;
 }
+.sidebar .navigation ul li.active{
+  background-color: rgb(0, 0, 0);
+}
+.sidebar .navigation ul li.active a{
+  color: white;
+}
