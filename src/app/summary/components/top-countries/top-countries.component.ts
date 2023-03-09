@@ -20,9 +20,9 @@ export class TopCountriesComponent implements OnInit, OnChanges {
  this.topConfirmedCases = this.covidData.Countries?.sort((a: any, b:any ) => b.TotalConfirmed - a.TotalConfirmed ).slice(0, 5);
  this.topDeath = this.covidData.Countries?.sort((a: any, b:any ) => b.TotalDeaths- a.TotalDeaths ).slice(0, 5);
  this.TopRecovered = this.covidData.Countries?.sort((a: any, b:any ) => b.TotalRecovered- a.TotalRecovered ).slice(0, 5);
-    console.log( "confirmed", this.topConfirmedCases);
-    console.log( "death", this.topDeath);
-    console.log( "recover", this.TopRecovered);
+    // console.log( "confirmed", this.topConfirmedCases);
+    // console.log( "death", this.topDeath);
+    // console.log( "recover", this.TopRecovered);
     
   }
 }
