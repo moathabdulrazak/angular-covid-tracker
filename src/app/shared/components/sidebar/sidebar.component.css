@@ -1,0 +1,37 @@
+.sidebar{
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 1px 5px 10px gray;
+  z-index: 1;
+}
+
+.sidebar .logo{
+  text-align: center;
+  margin: 20px 0px 40px;
+}
+
+.sidebar .logo img{
+  width: 70%;
+}
+
+.sidebar .navigation ul li{
+margin: 10px 0px ;
+padding: 5px 15px;
+cursor: pointer;
+transition: all ease 0.4s;
+}
+.sidebar .navigation ul li:hover,
+.sidebar .navigation ul li:active,
+.sidebar .navigation ul li:focus{
+  background-color: black;
+}
+
+.sidebar .navigation ul li a{
+  text-decoration: none;
+  color: black;
+
+}
