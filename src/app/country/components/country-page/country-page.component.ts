@@ -15,5 +15,13 @@ covidData: any;
     this.dataService.getSummaryData().subscribe((data: any) => {
       this.covidData = data;
     });
+
+  
+  }
+  searchCountry(country: String){
+      const countries = this.covidData.Countries.filter((c: any) => c.Country.toLowerCase().includes(country.toLowerCase()));
+
+      console.log('countries', countries);
+      
   }
 }
