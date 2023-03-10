@@ -36,11 +36,9 @@ constructor(private dataService: DataService){}
     
   }
   getCountryData(){
-    this.dataService.getCountryDataByDate(this.country,"2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z" ).subscribe((response: any) => {
-      this.barChartData[0].data = response.map((obj: any) => {
-        obj['Cases']
-      })
-      this.barChartLabels = response.map((obj: any) => obj['Date'].substring(0,10))
+    this.dataService.getCountryDataByDate(this.country,'2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z' ).subscribe((response: any) => {
+ this.barChartData[0].data = response.map((obj: any) => obj['Cases']);
+ this.barChartLabels = response.map((obj: any) => obj['Date'].substring(0,10))
       
     })
   }
